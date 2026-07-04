@@ -15,17 +15,20 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="site-title" href="index.html">My Blog</a>
-    <button id="theme-toggle" class="theme-toggle" type="button"></button>
+    <div class="header-inner">
+      <a class="site-title" href="index.html">My Blog</a>
+      <button id="theme-toggle" class="theme-toggle" type="button"></button>
+    </div>
   </header>
 
   <main>
-    <a class="back-link" href="index.html">&larr; 목록으로</a>
+    <a class="back-link" href="index.html">&larr; All Posts</a>
 
     <article>
       <header class="post-header">
+        <div id="post-tags" class="card-tags"></div>
         <h1 id="post-title"></h1>
-        <p id="post-meta" class="post-meta"></p>
+        <p id="post-meta"></p>
       </header>
       <div id="post-content" class="post-content"></div>
     </article>

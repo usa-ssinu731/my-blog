@@ -2,6 +2,7 @@ import { initThemeToggle } from "./theme.js";
 import { parseMarkdown } from "./markdown.js";
 
 const themeButton = document.getElementById("theme-toggle");
+const tagsEl = document.getElementById("post-tags");
 const titleEl = document.getElementById("post-title");
 const metaEl = document.getElementById("post-meta");
 const contentEl = document.getElementById("post-content");
@@ -24,8 +25,9 @@ async function loadPost() {
     const { meta, html } = parseMarkdown(raw);
 
     document.title = meta.title ? `${meta.title} - My Blog` : "My Blog";
+    tagsEl.innerHTML = (meta.tags || []).map((t) => `<span class="card-tag">${t}</span>`).join("");
     titleEl.textContent = meta.title || slug;
-    metaEl.textContent = [meta.date, ...(meta.tags ? [meta.tags.join(", ")] : [])].filter(Boolean).join(" · ");
+    metaEl.textContent = meta.date || "";
     contentEl.innerHTML = html;
   } catch (err) {
     contentEl.innerHTML = "<p>글을 불러오지 못했습니다.</p>";

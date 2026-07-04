@@ -15,16 +15,24 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="site-title" href="index.html">My Blog</a>
-    <button id="theme-toggle" class="theme-toggle" type="button"></button>
+    <div class="header-inner">
+      <a class="site-title" href="index.html">My Blog</a>
+      <button id="theme-toggle" class="theme-toggle" type="button"></button>
+    </div>
   </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">Personal Blog</p>
+      <h1>Writing,<br>Ideas &amp; Notes.</h1>
+    </div>
+  </section>
 
   <main>
     <div class="controls">
-      <input id="search-input" type="search" placeholder="글 검색...">
+      <input id="search-input" type="search" placeholder="Search...">
       <div id="tag-filters" class="tag-filters"></div>
     </div>
-
     <div id="post-list" class="post-list"></div>
   </main>
 

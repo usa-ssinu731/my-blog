@@ -60,8 +60,9 @@ function renderList() {
     .map(
       (post) => `
       <a class="post-card" href="post.html?slug=${encodeURIComponent(post.slug)}">
-        <h2>${post.title}</h2>
-        <p class="post-meta">${post.date}${post.tags && post.tags.length ? " · " + post.tags.join(", ") : ""}</p>
+        <div class="card-tags">${(post.tags || []).map((t) => `<span class="card-tag">${t}</span>`).join("")}</div>
+        <p class="card-title">${post.title}</p>
+        <p class="post-meta">${post.date}</p>
         <p class="post-summary">${post.summary || ""}</p>
       </a>
     `
