@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello, World!",
+    "date": "2026-07-04",
+    "tags": ["소개", "블로그"],
+    "summary": "이 블로그가 어떻게 동작하는지, 그리고 마크다운으로 어떻게 글을 쓰는지 소개합니다."
+  },
+  {
+    "slug": "today-i-learned",
+    "title": "오늘 배운 것",
+    "date": "2026-07-04",
+    "tags": ["학습", "웹개발"],
+    "summary": "Claude Code로 블로그를 만들면서 정리한 HTML, CSS, JavaScript 각각의 역할."
+  },
+  {
+    "slug": "event-delegation",
+    "title": "이벤트 위임으로 리스너 하나로 끝내기",
+    "date": "2026-07-04",
+    "tags": ["개발팁", "자바스크립트"],
+    "summary": "자식 요소마다 리스너를 달지 않고 부모에 하나만 달아 처리하는 이벤트 위임 패턴을 정리합니다."
+  },
+  {
+    "slug": "kim-dante-naver-blog",
+    "title": "내일은 투자왕 - 김단테 : 네이버 블로그",
+    "date": "2026-06-23",
+    "tags": ["클리핑", "투자"],
+    "summary": "Obsidian에서 스크랩한 김단테 네이버 블로그 클리핑."
+  }
+]
