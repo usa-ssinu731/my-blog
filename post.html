@@ -7,23 +7,22 @@
 <link rel="stylesheet" href="css/style.css">
 <script>
   (function () {
-    var stored = localStorage.getItem("theme");
-    var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    document.documentElement.setAttribute("data-theme", theme);
+    var t = localStorage.getItem("theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
   })();
 </script>
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="site-title" href="index.html">My Blog</a>
+      <a class="site-title" href="index.html">MY_BLOG</a>
       <button id="theme-toggle" class="theme-toggle" type="button"></button>
     </div>
   </header>
 
   <main>
     <a class="back-link" href="index.html">&larr; All Posts</a>
-
     <article>
       <header class="post-header">
         <div id="post-tags" class="card-tags"></div>
